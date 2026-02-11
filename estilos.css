@@ -1,0 +1,229 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+main section{
+     border-top: 1px solid;
+}
+header{
+  text-align: center;
+  padding: 45px 0;
+  background-image:url(descarga\ \(3\).jpg);background-repeat: no-repeat; background-size:cover;
+}
+body{
+    font-family: "Playwrite DE SAS", cursive;
+    background-image: url(Miep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    padding: 20px;
+    background: linear-gradient(90deg,#111 0%,#37559c 100%);
+}
+.portada{
+ background:rgba(255, 255, 255, 0.05);
+ backdrop-filter: blur(10px);
+ border: 1px solid rgba(255, 255, 255, 0.05);
+ padding: 40px 20px;
+ border-radius: 24px;
+ text-align: center;
+ width: 100%;
+ max-width: 400px;
+ box-shadow: 0 25px 50px -12px rgba(0,0,0,0,0.5);
+ animation: fadeIn 1.5s ease-out;
+}
+@keyframes fadeIn{
+    from{opacity: 0; transform: translateY(20px);}
+    to{opacity: 1;transform: translateY(0);}
+}
+.btn-link {
+    color: #ff5733 !important; /* Cambia al color deseado */
+    text-decoration: none; /* Opcional: quita el subrayado */
+}
+.btn-link:hover {
+    color: #c70039 !important; /* Color al pasar el mouse */
+}
+.portada img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #388878;
+    margin-bottom:20px;
+}
+h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-bottom: 5px;
+    color: #000000;
+}
+p{
+    font-size: 1rem;
+    color: #c70039;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background:linear-gradient(to right,transparent,#37559c,transparent);
+    margin-bottom: 25px;
+}
+.btn-link{
+    display: block;
+    background-color: #000000;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 16px;
+    margin:12px 0;
+    border-radius: 12px;
+    font-weight: 600;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezer(0.4,0,0.2,1);
+    border: 1px solid rgba(,255,255,255.1);
+}
+.btn-link:active{
+    transform: scale(0.95);
+    background-color: blue;
+    color: #37559c;
+}
+.section{
+    padding: 40px 20px;
+    max-width: 450;
+    margin: 0 auto;
+}
+.h2{
+    font-size: 1.2rem;
+    color: chartreuse;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contenedor-etiquetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.etiqueta{
+    background: #37559c;
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 1px solid #388878;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.proyecto-slider{
+    display: flex;
+    overflow-y: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+}
+.proyectos-slider::-wenkit-scrolbar{display: none;}
+.tarjeta-proyecto{
+    flex: 0 0 160px;
+    background: #37559c;
+    border-radius: 15px;
+    padding: 10px;
+    scroll-snap-align: start;
+}
+.tarjeta-proyecto img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    margin-bottom: 10PX;
+}
+.tarjeta-proyecto p{
+    font-size: 0.85rem;
+    color: bisque;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.formulario input, .formulario textarea{
+    width: 100%;
+    background: #111;
+    border: 1px solid #37559c;
+    padding: 15px;
+    border-radius: 10px;
+    color: #c70039;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.btn-enviar{
+    width: 100%;
+    background: #c70039;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ff5733;
+    cursor: pointer;
+    font-size: 1rem;color:cadetblue;
+}
+.pie-pagina{
+   background: #111;
+   text-align: center;
+   padding: 30px 20px;
+   margin-top: 20px;
+   border-top: 1px solid rgba(255,255,255,0.05);
+}
+.pie-pagina p{
+    font-size: 0.8rem;
+    color: #ff5733;
+    margin-bottom: 5px;
+}
+.pie-pagina .version{
+    font-size: 0.7rem;
+    color: brown;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.redes-sociales{
+margin-top: 1px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.redes-sociales span{
+font-size: 0.75rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+background: linear-gradient(90deg,#c70039,#ff5733);
+-webkit-background-clip: transparent;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+display: inline-block;
+padding: inline-block;
+border-radius: 8px;
+background-color: rgba(56,189,248,0.5);
+border: 1px solid rgba(56,189,248,0.1);
+animation: float 3s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform: trnslateY(0px);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform:translateY(0px)
+    }
+}
